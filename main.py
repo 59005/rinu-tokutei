@@ -44,7 +44,7 @@ def check(url: str):
     last_use_ip = dat["LastUsed"][11:]
 
     print("\n===== 情報 =====")
-    print(f"作成者のIPアドレス: {creator_ip} ({dat['CreatorInfo']})")
+    print(f"作成者のIPアドレス: {creator_ip}")
     print(f"作成者のタイムゾーン: {dat['CreatorInfo']['TimeZone']}")
     print(f"IPからわかる住所: {dat['CreatorInfo']['Location']}")
     print(f"IPからわかる郵便番号: {ipinfo.get('postal')}")
