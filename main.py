@@ -48,8 +48,7 @@ def check(url: str):
     print(f"作成者のタイムゾーン: {dat['CreatorInfo']['TimeZone']}")
     print(f"IPからわかる住所: {dat['CreatorInfo']['Location']}")
     print(f"IPからわかる郵便番号: {ipinfo.get('postal')}")
-    print(f"最後に使用したユーザーのIP: {last_use_ip}")
-    print("")
+    print("=============")
 
 def main():
     url = input("作者を特定したいURLを入力してください (例: https://rinu.jp/UNKOMANEZ1234): ")
